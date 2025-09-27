@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dissemination Project – Home</title>
+  <meta name="description" content="Technology-oriented dissemination project overview and updates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Dissemination Project Home">
+          <span class="brand-logo" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12h16M12 4v16" stroke="#00e0ff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-title">Dissemination Project</span>
+        </a>
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="project.html">The Project</a>
+          <a href="consortium.html">Consortium</a>
+          <a href="deliverables.html">Deliverables</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Menu">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-kicker">Technology dissemination</div>
+          <h1>Bridging research to real-world impact</h1>
+          <p>
+            This project accelerates adoption of cutting-edge communications technologies
+            through open knowledge, collaborative tooling, and structured dissemination.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="project.html">Explore the project</a>
+            <a class="btn secondary" href="deliverables.html">Browse deliverables</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="card kpi">
+          <div class="kpi-value">8+</div>
+          <div class="kpi-label">Consortium partners</div>
+        </div>
+        <div class="card kpi">
+          <div class="kpi-value">24</div>
+          <div class="kpi-label">Deliverables planned</div>
+        </div>
+        <div class="card kpi">
+          <div class="kpi-value">36 mo</div>
+          <div class="kpi-label">Project duration</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>Objectives</h2>
+          <p>
+            Amplify the reach of research outcomes in next-generation connectivity,
+            edge computing, and AI-driven networks by producing accessible resources
+            for industry, academia, and the public sector.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Latest highlights</h2>
+          <ul>
+            <li>Kickoff webinar slides published</li>
+            <li>First public dataset released</li>
+            <li>Workshop at ICT Summit scheduled</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Dissemination Project. All rights reserved.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

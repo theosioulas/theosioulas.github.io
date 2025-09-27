@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dissemination Project – The Project</title>
+  <meta name="description" content="Project details, work packages, diagrams, and images." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Dissemination Project Home">
+          <span class="brand-logo" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12h16M12 4v16" stroke="#00e0ff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-title">Dissemination Project</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a class="active" href="project.html">The Project</a>
+          <a href="consortium.html">Consortium</a>
+          <a href="deliverables.html">Deliverables</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Menu">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h1>About the project</h1>
+        <p>
+          Our dissemination project focuses on communicating advances in
+          communications technology, including 5G/6G systems, software-defined
+          networking, edge intelligence, and secure-by-design architectures.
+        </p>
+        <h2>Work packages</h2>
+        <ul>
+          <li>WP1: Management and Coordination</li>
+          <li>WP2: Technology Scouting and Curation</li>
+          <li>WP3: Content Production and Outreach</li>
+          <li>WP4: Community Building and Events</li>
+          <li>WP5: Impact Assessment and Sustainability</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>System overview</h2>
+        <figure class="figure">
+          <img src="assets/img/system-overview-placeholder.png" alt="System diagram placeholder"/>
+          <figcaption>Replace this placeholder with your system diagram (PNG/SVG).</figcaption>
+        </figure>
+        <figure class="figure" style="margin-top:12px;">
+          <img src="assets/img/workflow-placeholder.png" alt="Workflow diagram placeholder"/>
+          <figcaption>Workflow illustrating content production to dissemination channels.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Dissemination Project. All rights reserved.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,35 +1,35 @@
-## Welcome to my github website
+# Dissemination Project Website
 
-This is my place where I post my coding projects. 
+A static, professional website for a technology-focused dissemination project.
 
-# Markdown
+## Structure
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- `index.html` – Home
+- `project.html` – The Project (details, diagrams, images)
+- `consortium.html` – Consortium (partners, team)
+- `deliverables.html` – Deliverables (downloads)
+- `contact.html` – Contact form and details
+- `assets/css/styles.css` – Global theme
+- `assets/js/main.js` – Basic interactivity
+- `assets/img/` – Place images here
+- `downloads/` – Place public PDFs/ZIPs here
 
-```markdown
-Syntax highlighted code block
+## Usage
 
-# Header 1
-## Header 2
-### Header 3
+1. Open `index.html` in your browser to preview locally.
+2. Replace placeholders in `assets/img/` with real images, and update page content.
+3. Put PDFs/ZIPs into `downloads/` and update links in `deliverables.html`.
+4. Update contact info in `contact.html`.
 
-- Bulleted
-- List
+## Deployment
 
-1. Numbered
-2. List
+You can host this as static files on any provider (GitHub Pages, Netlify, Vercel, etc.).
 
-**Bold** and _Italic_ and `Code` text
+- For Netlify: drag-and-drop the `dissemination-site/` folder into Netlify.
+- For GitHub Pages: push to a repo and enable Pages for the `main` branch `/root`.
 
-[Link](url) and ![Image](src)
-```
+## Customization
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/theosioulas/theosioulas.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Adjust brand name and logo in the header across pages.
+- Modify the theme colors in `:root` within `assets/css/styles.css`.
+- Add more deliverables by replicating an item block in `deliverables.html`.

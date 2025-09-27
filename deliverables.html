@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dissemination Project – Deliverables</title>
+  <meta name="description" content="Public deliverables and downloads." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Dissemination Project Home">
+          <span class="brand-logo" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12h16M12 4v16" stroke="#00e0ff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-title">Dissemination Project</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="project.html">The Project</a>
+          <a href="consortium.html">Consortium</a>
+          <a class="active" href="deliverables.html">Deliverables</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Menu">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Public deliverables</h1>
+      <p class="muted">Add your PDFs to the <code>downloads/</code> folder and update the links below.</p>
+      <div class="filter-bar">
+        <select class="input" data-filter="year" aria-label="Filter by year">
+          <option value="">All years</option>
+          <option>2025</option>
+          <option>2024</option>
+        </select>
+        <select class="input" data-filter="type" aria-label="Filter by type">
+          <option value="">All types</option>
+          <option>Report</option>
+          <option>Dataset</option>
+          <option>Whitepaper</option>
+        </select>
+      </div>
+
+      <div class="deliverables-list">
+        <div class="deliverable" data-year="2024" data-type="report">
+          <div>
+            <strong>D1.1 Project Management Plan</strong>
+            <div class="meta">Version 1.0 • <span class="badge">Report</span> • 2024</div>
+          </div>
+          <a class="btn" href="downloads/D1.1_Project_Management_Plan.pdf" download>Download</a>
+        </div>
+        <div class="deliverable" data-year="2024" data-type="whitepaper">
+          <div>
+            <strong>D2.2 Technology Landscape Overview</strong>
+            <div class="meta">Version 1.0 • <span class="badge">Whitepaper</span> • 2024</div>
+          </div>
+          <a class="btn" href="downloads/D2.2_Tech_Landscape_Overview.pdf" download>Download</a>
+        </div>
+        <div class="deliverable" data-year="2025" data-type="dataset">
+          <div>
+            <strong>D3.3 Public Dataset v1</strong>
+            <div class="meta">Version 1.0 • <span class="badge">Dataset</span> • 2025</div>
+          </div>
+          <a class="btn" href="downloads/D3.3_Public_Dataset_v1.zip" download>Download</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Dissemination Project. All rights reserved.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

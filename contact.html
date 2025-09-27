@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dissemination Project – Contact</title>
+  <meta name="description" content="Contact the dissemination project team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Dissemination Project Home">
+          <span class="brand-logo" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12h16M12 4v16" stroke="#00e0ff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-title">Dissemination Project</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="project.html">The Project</a>
+          <a href="consortium.html">Consortium</a>
+          <a href="deliverables.html">Deliverables</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Menu">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid grid-2">
+      <div class="card">
+        <h1>Contact us</h1>
+        <p>Reach out for collaboration, media, or general inquiries.</p>
+        <form id="contactForm" class="form">
+          <label>
+            Name
+            <input class="input" type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input class="input" type="email" name="email" placeholder="name@example.com" required />
+          </label>
+          <label>
+            Subject
+            <input class="input" type="text" name="subject" placeholder="Topic" />
+          </label>
+          <label>
+            Message
+            <textarea class="input" name="message" placeholder="How can we help?" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Details</h2>
+        <p><strong>Email:</strong> info@example.org</p>
+        <p><strong>Address:</strong> 123 Innovation Way, Tech City</p>
+        <p><strong>Follow:</strong> <a href="#">Twitter/X</a> • <a href="#">LinkedIn</a></p>
+        <p class="meta">Replace placeholders with your real contact information.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Dissemination Project. All rights reserved.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
